@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@source inline("bg-gradient-to-br");
+@source inline("from-[#db469f]");
+@source inline("to-[#2188ff]");
+@source inline("bg-clip-text");
+
+@theme {
+  --font-sans: 'Open Sans', sans-serif;
+  --color-primary: #333;
+  --color-secondary: #4b5563;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%
+}
+
+@media (min-width: 480px) {
+    .container {
+        max-width:480px;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:768px;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+@media (min-width: 976px) {
+    .container {
+        max-width:976px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem
+    }
+}
+
+@media (min-width: 1344px) {
+    .container {
+        max-width:1344px;
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+}
+
+.stretched-link {
+    position: static
+}
+
+.stretched-link:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.image-wrap:after {
+    border: 0 solid;
+    box-sizing: border-box;
+    background: #2a2f3f;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .6s ease;
+    width: 100%;
+}
+.hover-transition:hover  img{
+    transform: scale(1.1) translate3d(-4%, 0, 0);
+    transition-duration: 1s;
+}
+
+.mobile-menu {
+    top: 64px;
+
+    background: #ecf0f2;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
